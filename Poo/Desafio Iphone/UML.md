@@ -1,38 +1,43 @@
+# Diagrama de Classes do iPhone
+
+```mermaid
 classDiagram
     %% Interfaces
     class ReprodutorMusical {
         <<interface>>
-        +tocar()
-        +pausar()
-        +selecionarMusica(musica: String)
+        +tocar() void
+        +pausar() void
+        +selecionarMusica(musica: String) void
     }
+    
     class AparelhoTelefonico {
         <<interface>>
-        +ligar(numero: String)
-        +atender()
-        +iniciarCorreioVoz()
+        +ligar(numero: String) void
+        +atender() void
+        +iniciarCorreioVoz() void
     }
+    
     class NavegadorInternet {
         <<interface>>
-        +exibirPagina(url: String)
-        +adicionarNovaAba()
-        +atualizarPagina()
+        +exibirPagina(url: String) void
+        +adicionarNovaAba() void
+        +atualizarPagina() void
     }
 
     %% Classe concreta
     class iPhone {
-        +tocar()
-        +pausar()
-        +selecionarMusica(musica: String)
-        +ligar(numero: String)
-        +atender()
-        +iniciarCorreioVoz()
-        +exibirPagina(url: String)
-        +adicionarNovaAba()
-        +atualizarPagina()
+        +tocar() void
+        +pausar() void
+        +selecionarMusica(musica: String) void
+        +ligar(numero: String) void
+        +atender() void
+        +iniciarCorreioVoz() void
+        +exibirPagina(url: String) void
+        +adicionarNovaAba() void
+        +atualizarPagina() void
     }
 
-    %% Relacionamentos
+    %% Relacionamentos (implementação)
     ReprodutorMusical <|.. iPhone
     AparelhoTelefonico <|.. iPhone
     NavegadorInternet <|.. iPhone
