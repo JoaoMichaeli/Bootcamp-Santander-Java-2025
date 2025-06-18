@@ -27,6 +27,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BinaryOperatorExample.executor": "Run",
     "Application.ConsumerExample.executor": "Run",
     "Application.FunctionExample.executor": "Run",
     "Application.PredicateExample.executor": "Run",
