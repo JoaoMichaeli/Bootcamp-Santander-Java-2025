@@ -1,9 +1,9 @@
 package accounts;
 
 import entities.Client;
-import interfaces.IConta;
+import interfaces.IAccount;
 
-public abstract class Account implements IConta {
+public abstract class Account implements IAccount {
 
     private static final int standardAgency = 1;
     private static int sequencial = 1;
@@ -30,7 +30,7 @@ public abstract class Account implements IConta {
     }
 
     @Override
-    public void transfer(double value, IConta destinationAccount) {
+    public void transfer(double value, IAccount destinationAccount) {
         this.withdraw(value);
         destinationAccount.deposit(value);
     }
