@@ -12,3 +12,7 @@ repositories {
 dependencies {
 
 }
+
+test {
+    useJUnitPlatform()
+}
